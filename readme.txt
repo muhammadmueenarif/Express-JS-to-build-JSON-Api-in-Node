@@ -18,3 +18,5 @@ you can add it using npm install --save express. but new version add automatical
 
 
 Lec 3. Setup and run express server. 
+create app.js file that will hold our startup code for server. as we have made app.js our main file while 
+instaling npm init. 
