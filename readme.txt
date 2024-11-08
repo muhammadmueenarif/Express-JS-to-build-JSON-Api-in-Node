@@ -32,3 +32,9 @@ app.listen(port, () => {
 });
 
 write node (file name) app.js command to check server is running. 
+
+
+Lec 4. Defining first get route in express. 
+if you start server by node app.js and open localhost3000 in browser you will see cannot get/. this is 
+beacause we did not specify any route. 
+we will write route b/w port and listen. 

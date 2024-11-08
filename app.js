@@ -7,6 +7,13 @@ const app = express();
 //app need to run on port so start a port. 
 const port = 3000; //we can write any port like 5000 5001 or that we want. 
 
+
+//app.get method is used to handle HTTP GET requests. we can use app.get() to handle different routes.
+//we can use res.send to show outpur or response on screen. 
+app.get('/', (req, res) => {
+    res.send('Server is listening');
+});
+
 //to make app listen to outside world, so we will use listen 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
