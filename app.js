@@ -12,9 +12,12 @@ const port = 3000; //we can write any port like 5000 5001 or that we want.
 //we can use res.send to show outpur or response on screen. 
 app.get('/', (req, res) => {
     res.send('Server is listening');
+    //res.send like res.send({name:'kashan'}); sending json in response. 
+    //res.send([{name:'kashan', id:1}, {name:'moin, id:'2'}]); sending array in response. 
 });
 
 //to make app listen to outside world, so we will use listen 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+

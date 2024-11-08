@@ -38,3 +38,11 @@ Lec 4. Defining first get route in express.
 if you start server by node app.js and open localhost3000 in browser you will see cannot get/. this is 
 beacause we did not specify any route. 
 we will write route b/w port and listen. 
+
+
+Lec 5. Using postman to test api. 
+download and install postman. watch simple video on youtube how to use it. check the request you are sending 
+and use same method in postman and check the route on which you are sending request and use that same route 
+in postman. send request and it will show response and its status code also. 200 means ok. 
+we can send json or array directly in res.send like res.send({name:'kashan'}); 
+res.send([{name:'kashan', id:1}, {name:'moin, id:'2'}]);
