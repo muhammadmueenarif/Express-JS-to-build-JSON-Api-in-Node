@@ -19,4 +19,16 @@ you can add it using npm install --save express. but new version add automatical
 
 Lec 3. Setup and run express server. 
 create app.js file that will hold our startup code for server. as we have made app.js our main file while 
-instaling npm init. 
+instaling npm init. first we import or require express. 
+const express = require('express');
+then we can use express() to call this as a function. 
+const app = express();
+app need to run on specific port so we will start a port. 
+const port = 3000; we can use any port. 
+
+to make app listen to outside world, so we will use listen 
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
+
+write node (file name) app.js command to check server is running. 
