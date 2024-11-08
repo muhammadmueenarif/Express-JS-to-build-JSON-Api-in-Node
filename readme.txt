@@ -46,3 +46,13 @@ and use same method in postman and check the route on which you are sending requ
 in postman. send request and it will show response and its status code also. 200 means ok. 
 we can send json or array directly in res.send like res.send({name:'kashan'}); 
 res.send([{name:'kashan', id:1}, {name:'moin, id:'2'}]);
+
+
+Lec 6. Writing route to get all route. 
+create book.js flle and write some books as a hardcoded data that you want to use and on which you want to 
+perform operations beacause we have not set up database. then export it using module.export = {
+    findAll() {
+        return books;
+    }
+}
+send book as response. res.send(book); it will automatically require book import it at the top of app.js file. 
