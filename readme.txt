@@ -56,3 +56,32 @@ perform operations beacause we have not set up database. then export it using mo
     }
 }
 send book as response. res.send(book); it will automatically require book import it at the top of app.js file. 
+check other in code. 
+
+
+Lec 7. Get specific book by id. 
+we can use /book/:id, to get specific id route. we are passing id as a parameter. 
+create another route in app.js beacause we have one route already to get all books. 
+we need to restart server every time we make changes so we can install nodemon for this. write command 
+npm i --save-dev  nodemon.
+use nodemon app.js to run server. but we can also use npx nodemon app.js beacause we have many folders and 
+dependencies in node modules and by using npx prefix we make it to tell that we want to use nodemon. 
+
+res.send(req.params.id); //this is a string not a number that we can check in postman response. if we need 
+number then we need to parseint it. 
+    res.sendStatus(404);
+    return; this will show 404 error not found in postman. 
+if we want to show the custom error message also, we can use, 
+    res.sendStatus(404).send({
+      message:'could not found the book';
+    });
+
+in new update, we write it as, 
+if (!book) {
+    res.send(404, {
+      message: 'Book not found',
+    });
+    return;
+  }
+
+

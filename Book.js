@@ -1,4 +1,4 @@
-const Books = [ 
+const books = [ 
     {
         "id":'1',
         "title": 'Book 1',
@@ -14,10 +14,15 @@ const Books = [
         "title": 'Book 3',
         "author": 'Author 3'
     }
-]
+]; //consider this as a database.
 
+//we have used module.exports before this we use module.export = { findAll }; at the end
+// and simply write function. 
 module.exports = {
     findAll() {
-        return Books;
+        return books;
+    },
+    findOne(id) {
+        return books.find(book => book.id === id);
     }
-}
+};
